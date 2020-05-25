@@ -1,0 +1,169 @@
+---
+title: assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+        <!-- header -->
+        <div class="header row mb-5">
+          <div class="col-2">
+            <h3>Assignment</h3>
+          </div> 
+          <div class="col-2">
+            <div class="dropdown">
+              <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  All Courses
+              </button>
+              <i class="material-icons">expand_more</i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">All Courses 選單內容</a>
+              </div>
+          </div>
+          </div>
+          <div class="col-8 d-flex justify-content-end">
+            <ul class="d-flex">
+              <li class="mr-5"><i class="material-icons">search</i></li>
+              <li><i class="material-icons">notifications_active</i></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 選單 -->
+        <div class="row">
+          <!-- 左側選單 -->
+            <div class="col-4">
+                <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      All (4)
+                    </button>
+                    <i class="material-icons">expand_more</i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">ALL 選單內容</a>
+
+                    </div>
+                </div>
+                <div class="list-group" id="list-tab" role="tablist">
+                  <!-- 選單1 -->
+                  <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#assignment1" role="tab" aria-controls="home">
+                    <div class="comments d-flex justify-content-between">
+                      <div class="title">
+                        <p>Chapter Assignment 2</p>
+                        <h4>Please check this file…</h4>
+                      </div>
+                      <div class="user">
+                        <p>4 hrs ago</p>
+                        <small>Emily Wang</small>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#assignment1" role="tab" aria-controls="profile">
+                    <div class="comments d-flex justify-content-between">
+                      <div class="title">
+                        <p>Chapter Assignment 1</p>
+                        <h4>My Homework</h4>
+                      </div>
+                      <div class="user">
+                        <p>12 hrs ago</p>
+                        <small>David Xu</small>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#assignment1" role="tab" aria-controls="messages">
+                    <div class="comments d-flex justify-content-between">
+                      <div class="title">
+                        <p>Final Assignment</p>
+                        <h4>Have a problem with this…</h4>
+                      </div>
+                      <div class="user">
+                        <p>18 hrs ago</p>
+                        <small>Tony Wei</small>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#assignment1" role="tab" aria-controls="settings">
+                    <div class="comments d-flex justify-content-between">
+                      <div class="title">
+                        <p>Final Assignment</p>
+                        <h4>Did I do it right?</h4>
+                      </div>
+                      <div class="user">
+                        <p>19 hrs ago</p>
+                        <small>Christina Lin</small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <!-- 主選單內容 -->
+            <div class="col-8">
+              <p class="totle-comments text-right">2 comments</p>
+              <div class="tab-content mb-4" id="nav-tabContent">
+                <!-- 選單1 -->
+                <div class="tab-pane fade show active" id="assignment1" role="tabpanel" aria-labelledby="list-home-list">
+                    <!-- card -->
+                    <div class="card">
+                        <!-- card 表頭 -->
+                        <div class="card-header">
+                          <div class="card-header-commment d-flex justify-content-between align-items-center">
+                            <div class="card-header-title">
+                              <p>Chapter Assignment 2 / HTML&CSS</p>
+                              <h4>Please check this file for me, thanks!</h4>
+                            </div>
+                            <div class="card-header-icon">
+                              <a href="#"><i class="material-icons">more_vert</i></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                            <li class="media">
+                                <img src="./assets/images/emilywang.jpeg" class="mr-3" alt="...">
+                                <div class="media-body">
+                                  <h4 class="mt-0 mb-1">Emily Wang</h4>
+                                  <small>10:38 AM (4 hours ago)</small>
+                                  <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                                  <button type="button" class="btn btn-outline-primary  mb-4">
+                                    <i class="material-icons">attach_file</i>
+                                    HW-2-David.zip
+                                  </button>
+                                </div>
+                              </li>
+                              <li class="media my-4">
+                                <img src="./assets/images/andychen.jpeg" class="mr-3" alt="...">
+                                <div class="media-body">
+                                  <div class="media-body-header d-flex justify-content-between">
+                                    <div class="media-body-header-text">
+                                      <h4 class="mt-0 mb-1">Andy Chen (You)</h4>
+                                      <small>13:24 AM (1 hours ago)</small>
+                                    </div>
+                                    <div class="media-body-header-icons">
+                                      <a href="#"> <i class="material-icons mr-4">star_border</i></a>
+                                      <a href="#"><i class="material-icons">edit</i></a>                                     
+                                    </div>
+                                  </div>
+                                  
+                                  <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. </p>
+                                  <p>You can:</p>
+                                  <p>• adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> )</p>
+                                  <p>• change the <code>display</code> so it isn’t inline.</p>
+                                </div>
+                              </li>
+                        </div>
+                      </div>
+                </div>
+                <!-- <div class="tab-pane fade" id="assignment2" role="tabpanel" aria-labelledby="list-profile-list">2</div> -->
+                <!-- <div class="tab-pane fade" id="assignment3" role="tabpanel" aria-labelledby="list-messages-list">3</div> -->
+                <!-- <div class="tab-pane fade" id="assignment4" role="tabpanel" aria-labelledby="list-settings-list">4</div> -->
+              </div>
+            <!-- 下面按鈕 -->
+            <div class="reply d-flex justify-content-between">
+              <div class="next-icons">
+                <a class="btn btn-primary" href="#" role="button"><i class="material-icons">chevron_left</i></a>
+                <a class="btn btn-primary" href="#" role="button"><i class="material-icons">chevron_right</i></a>
+              </div>
+              <div class="reply-buttons">
+                <button type="button" class="btn-mark btn btn-outline-primary mr-4">Mark as read</button>
+                <button type="button" class="btn-reply btn btn-primary active">Reply</button>
+              </div>
+            </div>    
+            </div>
+          </div>
+
