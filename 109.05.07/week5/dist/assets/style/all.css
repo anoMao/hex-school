@@ -1,0 +1,112 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+main {
+  padding: 2rem;
+  margin-left: 300px; }
+
+.sidebar {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #EDF4EE;
+  padding: 2rem 0;
+  font-weight: bold; }
+  .sidebar h3 {
+    margin-left: 2rem;
+    margin-bottom: 3rem; }
+  .sidebar i {
+    margin: 0.25rem 1rem; }
+  .sidebar h4 {
+    margin-left: 2rem;
+    position: absolute;
+    bottom: 0; }
+    .sidebar h4 img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 1rem; }
+    .sidebar h4 p {
+      margin-bottom: 0rem; }
+    .sidebar h4 small {
+      font-size: 0.875rem;
+      color: #0000009A; }
+
+.sidebar-list li a {
+  color: #121212;
+  display: block; }
+
+.sidebar-list li:hover {
+  background: #CDDDCD; }
+
+.sidebar-list .active {
+  color: #2A8356;
+  border-left: 5px solid #2A8356; }
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header {
+  background: pink; }
+
+.totle-comments {
+  color: #0000009A; }
+
+.list-group-item {
+  color: #121212; }
+
+.list-group-item.active, .card-header, .btn-outline-primary {
+  background-color: #EDF4EE;
+  color: #121212;
+  border-color: rgba(0, 0, 0, 0.125); }
+
+.list-group-item small {
+  color: #0000009A; }
+
+.card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.card small {
+  color: #0000009A; }
+
+.card a {
+  color: #121212; }
+
+.card code {
+  color: #2A8356;
+  background: #EDF4EE; }
+
+.card-body .media-body {
+  border-bottom: 1px solid #CDDDCD; }
+
+.btn-primary {
+  color: #121212;
+  background-color: #FFFFFF;
+  border-color: transparent; }
+
+.btn-outline-primary {
+  background-color: transparent; }
+
+.btn-outline-primary:hover, .btn-primary:hover {
+  border-color: rgba(0, 0, 0, 0.125);
+  background-color: #CDDDCD;
+  color: #121212; }
+
+.btn-mark, .btn-reply {
+  padding: 0.5rem 2rem; }
+
+/*# sourceMappingURL=all.css.map */
