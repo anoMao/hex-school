@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.center{
+    width: 880px;
+    margin: 0 auto;
+    font-family: 微軟正黑體;
+    padding: 50px;
+    font-size: 15px;
+}
+
+.introduce h2{
+    padding-top: 20px;
+}
+
+.introduce img{
+    width: 200px;
+    height: 200px;
+}
+
+.container1-1{
+    padding:0px 50px 0px 50px;
+}
+
+.profile{
+    padding-left:25px;
+    position: relative;
+}
+
+.point::before{
+    content:"";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #96a9c4;
+    border-radius: 50%;
+    left:1px;
+}
+
+.education{
+    position: relative;
+}
+.education-item{
+    margin-bottom: 32px;
+}
+.education-item::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #96A9C4;
+    border-radius: 50%;
+    left: -20px;
+}
+.timeLine::after{
+    content: "";
+    position: absolute;
+    border-left: 1px solid #96A9C4;
+    top: 0px;
+    bottom: 0px;
+    left: -14px;
+}
+
+.skill{
+    text-align:center;
+    color:white;
+    line-height:2;
+    background:#415165;
+    position:relative;
+    padding: 20px 50px 50px 50px;
+}
+
+.skill span{
+    color:white;
+}
+
+.skill::after{
+    content: "";
+    display:block;
+    height: 300px;
+    width: 2000px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left: -500px;
+    background-color:#96A9C4;
+    z-index:-1;
+}
+
+.skill-in{
+    text-align:left;
+    width: 200px;
+    margin: 0 auto;
+    padding-left: 32px;
+    border-left: 1px solid #96A9C4;
+    line-height:2.5;
+}
+
+.ex .profile{
+    width: 500px;
+    margin-left: 15px;
+    border-left: 1px solid #96A9C4;
+}
+.ex h3{
+    padding-bottom: 20px;
+}
+
+.ex p{
+    padding-bottom: 10px;
+}
+.experice img{
+    width: 60px;
+    height: 60px;
+}
+
+.experice h3{
+    font-size: 18px;
+    font-weight:bold;
+}
+.footer{
+    background:#415165;
+    text-align:center;
+    color:white;
+}
+
+.info p{
+    padding-bottom: 15px;
+}
+
+.info span{
+    color:white;
+}
+
+.icons img{
+    padding-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+span{
+    color:#ec0909;
+    font-size: 15px;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p{
+    line-height:1.5;
+}
+
+hr{
+    margin-bottom: 25px;
+}
