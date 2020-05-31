@@ -31,27 +31,17 @@
         background:$primary-color-bg;
     }
 }
+.list-group-item,.card{
+    p{
+        font-size: 0.75rem;
+    }
+    h4{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
 .card-body{
     .media-body{
         border-bottom: 1px solid $button-hover;
     }
-}
-
-// 按鈕樣式
-.btn-primary{
-    color:$primary-color-text;
-    background-color: $secondary-color-bg;
-    border-color: transparent;
-}
-
-.btn-outline-primary{
-    background-color:transparent;
-}
-.btn-outline-primary:hover,.btn-primary:hover{
-    border-color:$border-color;
-    background-color:$button-hover;
-    color:$primary-color-text;
-}
-.btn-mark,.btn-reply{
-    padding: 0.5rem 2rem;
 }

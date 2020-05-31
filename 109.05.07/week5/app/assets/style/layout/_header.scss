@@ -1,4 +1,24 @@
+.container{
+    max-width: 1200px;
+}
+.header{
+    h3,span{
+        font-weight: bold;
+    }
+    span{
+        font-size: 0.85rem;
+    }
+    span:hover{
+        color:$button-click;
+    }
+}
+.header,.table{
+    i{
+        color:$button-click;
+    }
+}
 main{
     padding:2rem;
-    margin-left: 300px;
+    // margin-left: 300px;
 }
+

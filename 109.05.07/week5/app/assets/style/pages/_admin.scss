@@ -1,6 +1,69 @@
-.wrap{
-    display: flex;
+// .wrap{
+    // display: flex;
+// }
+// user資料彈出
+.emir{
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    li{
+        // 不寫寬度會有奇怪的留白?
+        width: 60%;
+        display: block;
+    }
+    h4{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    small{ 
+        color:$third-color-text;
+    }
+    span{
+        background:$primary-color-bg;
+        padding: 0 0.5rem;
+    } 
 }
-.header{
-    background: pink;
+// emir 開關設定
+[aria-expanded="false"] .icon-open {
+    /*   不換行 */
+      display: inline;
+    /*   不換行又可設定元素寬高 */
+    /*   display:inline-block;
+      width: 50px;
+      height: 50px; */
+    /*   換行 */
+    /*   display:block; */
 }
+[aria-expanded="false"] .icon-close {
+    display: none;
+}
+[aria-expanded="true"] .icon-open {
+    display: none;
+}
+[aria-expanded="true"] .icon-close {
+    display: inline;
+}
+// 分頁設定
+.page-item{
+    padding: .5rem .75rem;
+    border:1px solid $button-hover;
+    background-color:transparent;
+    a{
+        color:$primary-color-text;
+    }
+    .material-icons{
+        padding-top: 0.5rem;
+    }
+}
+.page-item:hover{
+    border-color:$button-click;
+    background-color:$button-click;
+    a{
+        color:$secondary-color-text;
+    }
+}
+.page-num{
+    padding: 1rem;
+}
+

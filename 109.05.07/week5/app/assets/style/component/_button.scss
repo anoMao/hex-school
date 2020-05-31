@@ -1,0 +1,29 @@
+
+// 按鈕樣式
+.btn-primary{
+    color:$primary-color-text;
+    background-color: $secondary-color-bg;
+    border-color: transparent;
+}
+.btn-outline-primary:hover,.btn-primary:hover{
+    border-color:$border-color;
+    background-color:$button-hover;
+    color:$primary-color-text;
+}
+.btn-mark,.btn-reply{
+    border-color:$border-color;
+    background-color:$button-hover;
+    color:$primary-color-text;
+    padding: 0.5rem 2rem;
+}
+// active效果太兇殘 無法改樣式?
+.btn-deactive,.btn-edit,.btn-mark:hover,.btn-reply:hover{
+    border-color:$button-click;
+    background-color:$button-click;
+    color:$secondary-color-text;
+}
+.btn-deactive:hover,.btn-edit:hover{
+    border-color:$forth-color-text;
+    background-color:transparent;
+    color:$forth-color-text;
+}

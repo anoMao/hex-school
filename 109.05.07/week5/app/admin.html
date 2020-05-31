@@ -6,73 +6,212 @@ current: admin
 ---
 
 <!-- header -->
-<!-- <div class="header row mb-5"> -->
-<div class="header row">
+<div class="header row mb-5">
     <div class="col-2">
-        <h3>Admin</h3>
+      <h3>Admin</h3>
     </div> 
     <div class="col-2">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            Launch demo modal
-        </button>
+      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter1">
+        <i class="material-icons">add</i>
+        <span>Add New Admin</span>
+      </button>
     </div>
-    <div class="col-8">
-        123456
-    </div>
-    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
     <div class="col-8 d-flex justify-content-end">
-        <ul class="d-flex">
-            <li class="mr-5"><i class="material-icons">search</i></li>
-            <li><i class="material-icons">notifications_active</i></li>
-        </ul>
-    </div> -->
+      <ul class="d-flex">
+          <li class="material-icons mr-5">search</li>
+          <li class="material-icons">notifications_active</li>
+      </ul>
+    </div>
 </div>
-<!-- 表格 -->
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
+   <!-- 表格 -->
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"><span class="mr-3">ID</span><i class="material-icons">arrow_downward</i></th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Verified</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">#1</th>
+      <td>Emir Wicks</td>
+      <td>emir.wicks@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#2</th>
+      <td>Zaina Goldsmith</td>
+      <td>zaina.goldsmith@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#3</th>
+      <td>Mahima Lopez</td>
+      <td>Mahima.Lopez@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#4</th>
+      <td>Emir Wicks</td>
+      <td>emir.wicks@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#5</th>
+      <td>Zaina Goldsmith</td>
+      <td>zaina.goldsmith@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#6</th>
+      <td>Mahima Lopez</td>
+      <td>Mahima.Lopez@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#7</th>
+      <td>Emir Wicks</td>
+      <td>emir.wicks@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#8</th>
+      <td>Zaina Goldsmith</td>
+      <td>zaina.goldsmith@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#9</th>
+      <td>Mahima Lopez</td>
+      <td>Mahima.Lopez@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">#10</th>
+      <td>Mahima Lopez</td>
+      <td>Mahima.Lopez@mail.com</td>
+      <td>Yes</td>
+      <td class="text-right">
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#adminModalEyeMore">remove_red_eye</span>
+        <span class="material-icons">create</span>
+      </td>
+    </tr>
+  </tbody>
 </table>
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-end align-items-center">
+    <li class="page-item">
+      <a href="#"><i class="material-icons">chevron_left</i></a>
+    </li>
+    <li class="page-item page-num"><a href="#">1</a></li>
+    <li class="page-item page-num"><a href="#">2</a></li>
+    <li class="page-item page-num"><a href="#">3</a></li>
+    <li class="page-item">
+      <a href="#"><i class="material-icons">chevron_right</i></a>
+    </li>
+  </ul>
+</nav>
+<!-- Modal for add-->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for more information-->
+<div class="modal fade" id="adminModalEyeMore" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <!-- modal body 自帶padding -->
+      <ul class="emir modal-body d-flex">
+        <li ><img src="./assets/images/emir.jpeg" class="mr-3" alt="..."></li>
+        <li>
+          <p class="d-flex justify-content-between">
+            <p>#1</p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <p aria-hidden="true">&times;</p>
+            </button>
+          </p>
+          <p>Admin</p>
+          <h4>Emir Wicks</h4>
+          <small>emir.wicks@mail.com</small>
+          <p class="d-flex justify-content-between mb-4">
+            <span>Verified</span>
+            <a class=" adminModalEyeMore" data-toggle="collapse" href="#collapseUpDown" aria-expanded="false">
+              <i class="material-icons icon-open">expand_more</i>
+              <i class="material-icons icon-close">keyboard_arrow_up</i>
+            </a>
+          </p>
+          <p class="collapse" id="collapseUpDown">
+            <button type="button" class="btn-deactive btn ">Deactive</button>
+            <button type="button" class="btn-edit btn btn-primary">Edit</button>
+          </p>
+        </li>
+      </ul>
+  </div>
+</div>
+<!-- 使用JS做開關收合 -->
+<!-- <script>
+  let adminModalEyeMoreBtn = document.querySelector(".adminModalEyeMore")
+  let adminModalEye = document.querySelector(".adminModalEye .modal-content")
+  adminModalEyeMoreBtn.addEventListener("click", function () {
+      adminModalEye.classList.toggle("active")
+      if (adminModalEye.classList.contains("active")) {
+          adminModalEyeMoreBtn.innerText = "keyboard_arrow_up"
+      } else {
+          adminModalEyeMoreBtn.innerText = " expand_more"
+      }
+  })
+</script> -->
