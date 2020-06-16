@@ -1,0 +1,73 @@
+// banner 設定
+.banner{
+    @include pad(){
+        text-align: center;
+        color:white;
+    }
+}
+.banner-img{
+    top:0;
+    left:calc(50% + 2rem);
+    right:0;
+    bottom:0;
+//   background-image: url('https://images.unsplash.com/photo-1498309313100-e308c8946b45?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=');
+//   此相對路徑是以_all.scss所在位置為參照點
+    background-image: url('../images/index-1.jpg');
+    z-index:-1;
+    @include pad(){
+        left:0;
+    }
+}
+
+// @media (min-width: 576px){
+//     .text-md-dark {
+//       color: #333 !important;
+//     }
+// }
+
+.banner-shopbtn{
+    @include pad(){
+        width: 100% !important;
+    }
+}
+
+
+// information設定
+.infomation{
+    img{
+    width: 100%;
+    }
+    .specialCray-text{
+        @include pad(){
+            text-align:left !important;
+        }    
+    }
+}
+// artist設定
+.artist{
+    background-image: url('../images/index-5.jpg');
+}
+
+.products-img{
+    img{
+        width: 100%;
+        height: 350px;
+    }
+}
+.text-right-coner{
+    top: 2%;
+    left:75%;
+}
+// .products-img::before{
+//     content:"sale";
+//     position:absolute;
+// }
+// 產品列表
+.subscribes{
+    background-image: url('../images/footer.jpg');
+}
+
+
+
+
+

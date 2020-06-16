@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #0E8A00; }
+  a:hover {
+    text-decoration: none;
+    color: #6cc962; }
+
+.btn-primary {
+  background-color: #0E8A00;
+  border-color: #0E8A00; }
+
+.btn-primary:hover {
+  background-color: #6cc962;
+  border-color: #6cc962; }
+
+/* 查看區塊設定 */
+/* .container{
+    background: pink;
+} */
+/* .container-fluid{
+    background: yellow;
+} */
+.h-800 {
+  height: 800px; }
+
+.h-759 {
+  height: 759px; }
+
+.h-400 {
+  height: 400px; }
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.bg-black {
+  background: #000; }
+
+.navigation .logo a {
+  color: black; }
+  @media (max-width: 768px) {
+    .navigation .logo a {
+      color: white; } }
+
+.navigation a {
+  color: white; }
+
+@media (max-width: 768px) {
+  .banner {
+    text-align: center;
+    color: white; } }
+
+.banner-img {
+  top: 0;
+  left: calc(50% + 2rem);
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/index-1.jpg");
+  z-index: -1; }
+  @media (max-width: 768px) {
+    .banner-img {
+      left: 0; } }
+
+@media (max-width: 768px) {
+  .banner-shopbtn {
+    width: 100% !important; } }
+
+.infomation img {
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .infomation .specialCray-text {
+    text-align: left !important; } }
+
+.artist {
+  background-image: url("../images/index-5.jpg"); }
+
+.products-img img {
+  width: 100%;
+  height: 350px; }
+
+.text-right-coner {
+  top: 2%;
+  left: 75%; }
+
+.subscribes {
+  background-image: url("../images/footer.jpg"); }
+
+@media only screen and (max-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 2 !important;
+       -moz-column-count: 2 !important;
+            column-count: 2 !important; }
+  .card-columns .card img {
+    max-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
+.card img {
+  width: 100%; }
+
+.page-item.active .page-link {
+  color: green;
+  background-color: white;
+  border-color: white;
+  text-decoration: underline; }
+
+.page-item .page-link {
+  color: black;
+  background-color: white;
+  border-color: white; }
+
+/*# sourceMappingURL=all.css.map */

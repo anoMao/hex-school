@@ -1,0 +1,18 @@
+// 變數 icon圖片引入 全站設定/變數/工具程式
+// @import "config/reset"
+@import "config/variable"; 
+@import "config/base";
+@import "config/util";
+@import "config/mixin.scss";
+
+// layout 共同框架及頁面設計
+@import "layout/header";
+// @import "layout/footer";
+
+// 頁面設計
+@import "pages/index";
+@import "pages/product";
+
+//component樣式
+// @import "component/button";
+// @import "component/others";

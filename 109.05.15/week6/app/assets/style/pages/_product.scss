@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+    .card-columns {
+        column-count: 2 !important;
+    }
+    .card-columns .card img {
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+
+.card img{
+    width: 100%;
+}
+
+.page-item.active .page-link{
+    color:green;
+    background-color: white;
+    border-color:white;
+    text-decoration:underline;
+}
+.page-item .page-link{
+    color:black;
+    background-color: white;
+    border-color:white;
+}

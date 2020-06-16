@@ -1,0 +1,13 @@
+.navigation{
+    .logo{
+        a{
+            color:black;
+            @include pad(){
+                color:white;
+            }
+        }
+    }
+    a{
+        color:white;
+    }
+}
