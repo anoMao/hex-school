@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,51 +15,73 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- 視差滾動套件 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
   <header class="container position-relative">
-    <nav class="navigation navbar navbar-expand-md row justify-content-between align-items-center">
-      <a class="d-block d-md-none text-left material-icons" href="#">dehaze</a>
-      <h3 class="logo font-weight-bold font-italic"><a href="#">Craftsman</a></h3>
-      <ul class="d-flex justify-content-end">
-        <li class="list-unstyled d-none d-md-block mr-5"><a href="#">Product</a></li>
-        <li class="list-unstyled d-none d-md-block mr-5"><a href="#">Blog</a></li>
-        <li class="list-unstyled d-none d-md-block mr-5"><a href="#">Contact</a></li>
-        <li class="material-icons"><a  href="#">shopping_cart</a></li>
-      </ul>
-   </nav>
- </header>
- <main>
-    <%- contents %>
- </main>
+      <nav class="navigation navbar navbar-expand-md row">
+        <a class="col-4 navbar-toggler material-icons" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          dehaze
+        </a>      
+        <h3 class="logo col-4 col-md-6 font-weight-bold font-italic">
+          <a href="./index.html">Craftsman</a>
+        </h3>    
+        <div class="col-4 col-md-6 ">
+          <div class="nav justify-content-end">
+            <ul class="mb-0 row collapse navbar-collapse justify-content-end" id="collapseExample">
+              <li class="pro list-unstyled mr-md-3 mr-lg-5"><a href="./product.html">Product</a></li>
+              <li class="pro list-unstyled mr-md-3 mr-lg-5"><a href="#">Blog</a></li>
+              <li class="pro list-unstyled mr-md-3 mr-lg-5"><a href="#">Contact</a></li>
+            </ul>
+            <i class="material-icons"><a href="#">shopping_cart</a></i>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+      <%- contents %>
+  </main>
 <!-- 訂閱 -->
- <section class="subscribes bg-cover">
-  <div class="container">
-    <div class="row justify-content-start align-items-center px-3 h-400 ">
-      <h1 class="text-white">Subscribe for news<br> and special offers!</h1>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Your email address" aria-label="Input your email for subscribes" aria-describedby="subscribes-btn">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="subscribes-btn">Subscribe</div>
-        </div>
+  <section class="subscribes bg-cover">
+    <div class="container">
+      <div class="row flex-column justify-content-center align-items-right px-3 h-400 ">
+        <h3 class="text-white my-3">Subscribe for news<br> and special offers!</h3>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Your email address" aria-label="Input your email for subscribes">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Subscribe</button>
+        </form>
+      
+        <!-- <div class="input-group">
+          <input type="text" class="form-control" placeholder="Your email address" aria-label="Input your email for subscribes" aria-describedby="subscribes-btn">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="subscribes-btn">Subscribe</div>
+          </div>
+        </div> -->
       </div>
     </div>
-  </div>
-</section>
-<footer class="bg-black">
-  <div class="container">
-    <div class="row justify-content-between align-items-center px-3">
-      <p class="font-weight-bold font-italic text-white">
-        Craftsman
-        <small class="font-weight-normal">© 2020. All Rights Reserved.</small>
-      </p>
-      <ul class="d-flex">
-        <li><a href="#">Purchase Policy</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-      </ul>
+  </section>
+  <footer class="footer bg-black">
+    <div class="container">
+      <div class="row justify-content-between align-items-center p-3">
+        <p class="col-md-6 h3 font-weight-bold font-italic text-white">
+          Craftsman
+          <small class="d-none d-md-block font-weight-normal text-secondary ">© 2020. All Rights Reserved.</small>
+        </p>
+        <ul class="col-md-6 d-flex flex-column flex-md-row">
+          <li class="my-1 my-md-0 mr-5"><a class="text-white" href="#">Purchase Policy</a></li>
+          <li class="my-1 my-md-0 mr-5"><a class="text-white" href="#">Privacy Policy</a></li>
+          <li><a class="text-white" href="#">Terms & Conditions</a></li>\
+          <small class="d-block d-md-none font-weight-normal text-secondary ">© 2020. All Rights Reserved.</small>
+        </ul>
+        
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

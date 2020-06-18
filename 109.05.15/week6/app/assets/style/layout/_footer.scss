@@ -1,60 +1,14 @@
-.sidebar{
-    // 全部margin-left: 2rem; 但選單部分...?
-    // border: 1px solid #000;
-    width: 300px;
-    position: fixed;
-    top:0;
-    bottom:0;
-    background:$primary-color-bg;
-    padding: 2rem 0;
-    font-weight: bold;
-    h1{
-        margin-left: 2rem;
-        margin-bottom: 3rem;
-    }  
-    i{
-        margin:0.25rem 1rem;
-    }
-    h4{
-        margin-left: 2rem;
-        // position: absolute;
-        // bottom:0;
-        img{
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 1rem;
-        }
-        p{
-            margin-bottom: 0rem;
-        }
-        small{
-            font-size: 0.875rem;
-            color:$third-color-text;
-        }
+.subscribes{
+    h3{
+        font-size: 3rem;
     }
 }
-.sidebar-list{
-    li{
-        position: relative;
-        a{
-            color:$primary-color-text;
-            display: block;
-        }
+.form-inline .form-control{
+    width: 25%;
+    @include pad(){
+        width: 60%;
     }
-    li:hover{
-        background:$button-hover;
-    }
-    li.active::before{
-        background:$button-hover;
-        content:"";
-        position: absolute;       
-        border-left: 5px solid $button-click;
-        top: 0px;
-        left: -30px;
-        bottom: 0px;
-    }
-    .active a{
-        color:$button-click; 
+    @include phone{
+        width: 60%;
     }
 }
