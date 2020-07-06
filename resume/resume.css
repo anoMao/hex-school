@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* 全域設定 */
+body {
+  font-family: '微軟正黑體';
+  /* font-size: 16px; */
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.whoami {
+  /* color:black; */
+  background-image: url("./resume-img/kyoto.jpg");
+  /* font-size: 2rem; */
+  height: 800px;
+  /* opacity: 0.7; */
+}
+
+.whoami .whoami-Mao {
+  background: rgba(0, 255, 204, 0.45);
+}
+
+.whoami-img {
+  /* color:white; */
+  /* background: pink; */
+}
+
+.whoami-icons {
+  /* color:yellow; */
+}
+
+.whoami-githubicon, .whoami-email {
+  /* background: #000; */
+  width: 50px;
+  height: 50px;
+}
+
+.whoami-githubicon:hover .whoami-githubicon1 {
+  display: none !important;
+}
+
+.whoami-githubicon:hover .whoami-githubicon2 {
+  display: block !important;
+}
+
+.whoami-email:hover .whoami-email1 {
+  display: none !important;
+}
+
+.whoami-email:hover .whoami-email2 {
+  display: block !important;
+}
+
+.whoami-introduction {
+  /* color:white; */
+  /* background: #000; */
+}
+
+/* .whoami img ,.whoami-githubicon img, .myWorks img{
+    width: 100%;
+} */
+.myWorks img {
+  width: 100%;
+}
+
+.myWorks a:hover {
+  opacity: 0.7;
+  font-size: 2rem;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.workExperience-list {
+  border-left: 5px solid purple;
+}
+
+/* 工具區 */
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=resume.css.map */
