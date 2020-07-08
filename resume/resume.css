@@ -9,25 +9,24 @@ ul, ol {
   list-style: none;
 }
 
+mark {
+  background: #CECEFF;
+  border-radius: 0.5rem;
+  border-bottom: 0.25rem solid #6699CC;
+}
+
 .whoami {
   /* color:black; */
   background-image: url("./resume-img/kyoto.jpg");
-  /* font-size: 2rem; */
   height: 800px;
-  /* opacity: 0.7; */
+}
+
+.whoami .whoami-img img {
+  border-radius: 50%;
 }
 
 .whoami .whoami-Mao {
   background: rgba(0, 255, 204, 0.45);
-}
-
-.whoami-img {
-  /* color:white; */
-  /* background: pink; */
-}
-
-.whoami-icons {
-  /* color:yellow; */
 }
 
 .whoami-githubicon, .whoami-email {
@@ -52,14 +51,6 @@ ul, ol {
   display: block !important;
 }
 
-.whoami-introduction {
-  /* color:white; */
-  /* background: #000; */
-}
-
-/* .whoami img ,.whoami-githubicon img, .myWorks img{
-    width: 100%;
-} */
 .myWorks img {
   width: 100%;
 }
@@ -71,8 +62,8 @@ ul, ol {
   transition: all .5s ease-in-out;
 }
 
-.workExperience-list {
-  border-left: 5px solid purple;
+.workExperience-list, .study-list {
+  line-height: 2rem;
 }
 
 /* 工具區 */
@@ -80,5 +71,35 @@ ul, ol {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.timeLine, .timeLine-item {
+  position: relative;
+}
+
+.timeLine-item span {
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.timeLine::before {
+  content: "";
+  border-left: 5px solid #99CCFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.timeLine-item::before {
+  content: "";
+  width: 1.5rem;
+  height: 1rem;
+  background: #CCFFFF;
+  border: 2px solid #6699CC;
+  position: absolute;
+  border-radius: 8px;
+  top: 45%;
+  left: -3.5rem;
 }
 /*# sourceMappingURL=resume.css.map */
