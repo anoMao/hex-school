@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* 全域設定 */
 body {
-  font-family: '微軟正黑體';
-  /* font-size: 16px; */
+  font-family: "Segoe UI","微軟正黑體",sans-serif;
+  background: #FCFAF2;
 }
 
 ul, ol {
@@ -16,9 +16,8 @@ mark {
 }
 
 .whoami {
-  /* color:black; */
   background-image: url("./resume-img/kyoto.jpg");
-  height: 800px;
+  height: 500px;
 }
 
 .whoami .whoami-img img {
@@ -26,7 +25,7 @@ mark {
 }
 
 .whoami .whoami-Mao {
-  background: rgba(0, 255, 204, 0.45);
+  background: rgba(168, 225, 229, 0.85);
 }
 
 .whoami-githubicon, .whoami-email {
@@ -56,10 +55,10 @@ mark {
 }
 
 .myWorks a:hover {
-  opacity: 0.7;
-  font-size: 2rem;
+  opacity: 0.75;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  outline: 0.35rem solid #7B90D2;
 }
 
 .workExperience-list, .study-list {

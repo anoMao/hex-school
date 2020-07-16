@@ -5,11 +5,12 @@ $second-light:#CCFFFF;
 $third-dark:#6699CC;
 // 2.紫色系
 $primary-bg:#CECEFF;
+$secondary-bg:#7B90D2;
 /* 全域設定 */
 body {
-    font-family: '微軟正黑體';
-
-    /* font-size: 16px; */
+    font-family: "Segoe UI","微軟正黑體",sans-serif;
+    // background: #f1f0f0;
+    background:#FCFAF2;
 }
 ul,ol {
     list-style: none;
@@ -28,9 +29,8 @@ mark{
     }
 }
 .whoami{
-    /* color:black; */
     background-image: url("./resume-img/kyoto.jpg");
-    height: 800px;
+    height: 500px;
     .whoami-img{
         img{
             border-radius: 50%;
@@ -38,7 +38,7 @@ mark{
     }
     .whoami-Mao{
         // background: #000;
-        background:rgba(0,255,204,0.45);
+        background:rgba(168, 225, 229, 0.85);
     }
 }
 .whoami-githubicon,.whoami-email{
@@ -66,11 +66,11 @@ mark{
    img{
     width: 100%;
    }
-}
-.myWorks a:hover{
-    opacity: 0.7;
-    font-size: 2rem;
+   a:hover{
+    opacity: 0.75;
     transition: all .5s ease-in-out;
+    outline: 0.35rem solid $secondary-bg;
+   }
 }
 .workExperience-list,.study-list{
     line-height: 2rem;
